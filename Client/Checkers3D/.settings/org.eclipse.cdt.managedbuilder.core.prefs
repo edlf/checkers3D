@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/CPATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/CPLUS_INCLUDE_PATH/delimiter=\:
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/CPLUS_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/appendContributed=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/LIBRARY_PATH/delimiter=\:
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/append=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.linux.exe.release.2052532949/appendContributed=true

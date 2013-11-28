@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA74A35E-8384-4A47-AF24-D0DF12D7A330}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Checkers3D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Documents\Libs\include;D:\Documents\Libs\boost_1_55_0;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Documents\Libs\lib;D:\Documents\Libs\boost_1_55_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0501;GLEW_STATIC;FREEGLUT_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Libs\boost_1_55_0;G:\Libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>G:\Libs\boost_1_55_0\stage\lib;G:\Libs\lib;G:\Libs\boost_1_55_0\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;FREEGLUT_STATIC;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN32_WINNT=0x0501;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Libs\boost_1_55_0;G:\Libs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>G:\Libs\boost_1_55_0\stage\lib;G:\Libs\lib;G:\Libs\boost_1_55_0\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut_static.lib;glew32s.lib;glfw3.lib;glu32.lib;libpng.lib;opengl32.lib;libz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Checkers3D.cpp" />
+    <ClCompile Include="checkersBackground.cpp" />
+    <ClCompile Include="checkersBoard.cpp" />
+    <ClCompile Include="checkersBoardOverlay.cpp" />
+    <ClCompile Include="checkersGameScene.cpp" />
+    <ClCompile Include="checkersIntroScene.cpp" />
+    <ClCompile Include="checkersMenuScene.cpp" />
+    <ClCompile Include="checkersPiece.cpp" />
+    <ClCompile Include="checkersPlane.cpp" />
+    <ClCompile Include="checkersScene.cpp" />
+    <ClCompile Include="checkersSettings.cpp" />
+    <ClCompile Include="geAnimation.cpp" />
+    <ClCompile Include="geAppearance.cpp" />
+    <ClCompile Include="geCamera.cpp" />
+    <ClCompile Include="geException.cpp" />
+    <ClCompile Include="geLight.cpp" />
+    <ClCompile Include="gePrimitive.cpp" />
+    <ClCompile Include="geShader.cpp" />
+    <ClCompile Include="geSharedMethods.cpp" />
+    <ClCompile Include="geTexture.cpp" />
+    <ClCompile Include="geTransform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Checkers3D.hpp" />
+    <ClInclude Include="include\checkersBackground.hpp" />
+    <ClInclude Include="include\checkersBoard.hpp" />
+    <ClInclude Include="include\checkersBoardOverlay.hpp" />
+    <ClInclude Include="include\checkersGameScene.hpp" />
+    <ClInclude Include="include\checkersIntroScene.hpp" />
+    <ClInclude Include="include\checkersMenuScene.hpp" />
+    <ClInclude Include="include\checkersPiece.hpp" />
+    <ClInclude Include="include\checkersPlane.hpp" />
+    <ClInclude Include="include\checkersScene.hpp" />
+    <ClInclude Include="include\checkersSettings.hpp" />
+    <ClInclude Include="include\geAnimation.hpp" />
+    <ClInclude Include="include\geAppearance.hpp" />
+    <ClInclude Include="include\geCamera.hpp" />
+    <ClInclude Include="include\geException.hpp" />
+    <ClInclude Include="include\geLight.hpp" />
+    <ClInclude Include="include\gePrimitive.hpp" />
+    <ClInclude Include="include\geShader.hpp" />
+    <ClInclude Include="include\geSharedMethods.hpp" />
+    <ClInclude Include="include\geTexture.hpp" />
+    <ClInclude Include="include\geTransform.hpp" />
+    <ClInclude Include="include\hoConstants.hpp" />
+    <ClInclude Include="include\hoIncludes.hpp" />
+    <ClInclude Include="include\hoStructs.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

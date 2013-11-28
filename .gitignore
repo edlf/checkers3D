@@ -1,13 +1,50 @@
+# Visual Studio Crap
+*.opensdf
+*.sdf
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
+*.obj
+*.d
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Folders
+Release/
+Debug/
+build-Checkers3D-Desktop-Debug/
+build-Checkers3D-Desktop-Release/
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Backups 
+*~
+
+# Game Settings
+Checkers3D.sav
+
+Server/.idea/workspace.xml
